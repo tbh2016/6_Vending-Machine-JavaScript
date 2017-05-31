@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Vending Machine</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style>
+        table,
+        th {
+            border: 1px solid orange;
+        }
+        .dynamicBox {
+            border: 3px solid green;
+            width: 150x;
+            height: 150px;
+            padding: 20px;
+            margin: 20px;
+            font-size: 20px;
+            color: blueviolet;
+        }
+        #messageChangeResponseBox,
+        #itemIdBox,
+        #messageMoneyBox {
+            border: 3px solid green;
+            height: 40px;
+        }
+        #messageResponseBox {
+            border: 3px solid green;
+            height: 60px;
+            font-size: 20px;
+            text-align: center;
+        }
+        hr {
+
+            border: solid 1px black;
+            width: 96%;
+            color: #FFFF00;
+            height: 1px;
+        }
+        h3 {
+            text-align: center;
+            font-size: 37px;
+            font-weight: bold;
+        }
+        #dollarButton,
+        #dimeButton,
+        #quarterButton,
+        #nickelButton {
+            width: 100%;
+            margin: 5px;
+        }
+        #messageMoneyBox,
+        #itemIdBox {
+            font-size: 30px;
+            text-align: center;
+        }
+        label {
+            font-size: 30px;
+        }
+        #messageChangeResponseBox {
+            height: 50px;
+        }
+        backgroundPic {
+            background-size: 100%;
+            background-repeat: no-repeat;
+            width: 100%;
+            overflow-x: hidden;
+        }
+        body {
+            background: url(light-streaks-backgrounds-ppt.jpg) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <font color="black">
+        <br>
+        <br>
+        <div class="container">
+
+
+            <h1>
+                <center> Vending Machine </center>
+            </h1>
+            <hr>
+
+            <div class="row">
+                <!--//*****************************************************************************************//
+//***************************CANDY BOXES********************************************************//
+//*****************************************************************************************//-->
+                <div class="col-md-9" id="vendingBox">
+                    <!--<div class="col-md-3 candyBox">a</div>
+                    <div class="col-md-3 candyBox">a</div>
+                    <div class="col-md-3 candyBox">a</div>
+                    <div class="col-md-3 candyBox">a</div>
+                    <div class="col-md-3 candyBox">a</div>
+                    <div class="col-md-3 candyBox">a</div>
+                    <div class="col-md-3 candyBox">a</div>
+                    <div class="col-md-3 candyBox">a</div>
+                    <div class="col-md-3 candyBox">a</div>-->
+                </div>
+
+
+
+                <!--//*****************************************************************************************//
+//**************************TOTAL $ IN********************************************************//
+//*****************************************************************************************//-->
+                <div class="col-md-3">
+                    <form class="calculationForm">
+                        <h3> Total $ in </h3>
+
+                        <div class="col-md-12 form-group">
+                        </div>
+                        <div class="col-md-12 " id="messageMoneyBox">
+                        </div>
+                        <br>
+                        <div class="col-md-6">
+                            <button type="button" class="btn btn-default" id="dollarButton">Add Dollar</button>
+                            <button type="button" class="btn btn-default" id="dimeButton">Add Dime</button>
+                        </div>
+                        <div class="col-md-6">
+                            <button type="button" class="btn btn-default" id="quarterButton">Add Quarter</button>
+                            <button type="button" class="btn btn-default" id="nickelButton">Add Nickel</button>
+                        </div>
+                        <hr>
+                        <!--//*****************************************************************************************//
+//***************************MESSAGES********************************************************//
+//*****************************************************************************************//-->
+
+                        <h3>Messages</h3>
+                        <div class="col-md-12 " id="messageResponseBox">
+                        </div>
+                        <br><br><br>
+                        <label for="itemIdBox" class="col-md-4 control-label">Item: </label>
+                        <div class="col-md-8" id="itemIdBox">
+                        </div>
+                        <div class="col-md-12 form-group">
+                            <button type="button" id="purchaseButton" class="btn btn lg">Make Purchase</button>
+                        </div>
+                        <hr>
+
+
+
+
+                        <!--//*****************************************************************************************//
+//***************************CHANGE********************************************************//
+//*****************************************************************************************//-->
+                        <h3>Change</h3>
+                        <div class="col-md-12 " id="messageChangeResponseBox">
+                        </div>
+                        <div class="col-md-12 form-group">
+                            <button type="button" id="returnChangeButton" class="btn btn lg">Return Change</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <script src="js/jquery-2.2.4.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/home.js"></script>
+    </font>
+</body>
+
+</html>
